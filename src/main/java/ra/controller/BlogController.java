@@ -32,7 +32,6 @@ public class BlogController {
     Iterable<Catalog> getlist() {
         return catalogService.findAll();
     }
-
     @GetMapping
     public ResponseEntity<List<Blog>> home() {
         List<Blog> listBlog = (List<Blog>) blogService.findAll();
